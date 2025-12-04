@@ -2,6 +2,7 @@ use std::{fmt, fs, path::Path};
 
 mod day1;
 mod day2;
+mod day3;
 
 #[derive(Copy, Clone)]
 pub struct Challenge {
@@ -10,7 +11,14 @@ pub struct Challenge {
     implementation: fn(input: &str) -> i64,
 }
 
-pub const CHALLENGES: &[Challenge] = &[day1::PART1, day1::PART2, day2::PART1, day2::PART2];
+pub const CHALLENGES: &[Challenge] = &[
+    day1::PART1,
+    day1::PART2,
+    day2::PART1,
+    day2::PART2,
+    day3::PART1,
+    day3::PART2,
+];
 
 impl Challenge {
     const fn new(day: usize, part: usize, implementation: fn(input: &str) -> i64) -> Self {

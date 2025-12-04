@@ -13,10 +13,11 @@ fn iter(input: &str) -> impl Iterator<Item = RangeInclusive<i64>> {
 
 pub const PART1: Challenge = Challenge::new(2, 1, |input| {
     let mut invalid = 0;
-
     let mut buffer = Buffer::new();
+
     for id in iter(input).flatten() {
         let s = buffer.format(id);
+
         if s.len().is_multiple_of(2) {
             let (l, r) = s.split_at(s.len() / 2);
             if l == r {
