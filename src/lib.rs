@@ -3,6 +3,7 @@ use std::{fmt, fs, path::Path};
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 #[derive(Copy, Clone)]
 pub struct Challenge {
@@ -18,6 +19,8 @@ pub const CHALLENGES: &[Challenge] = &[
     day2::PART2,
     day3::PART1,
     day3::PART2,
+    day4::PART1,
+    day4::PART2,
 ];
 
 impl Challenge {
