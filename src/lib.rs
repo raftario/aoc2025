@@ -4,6 +4,7 @@ mod day1;
 mod day2;
 mod day3;
 mod day4;
+mod day5;
 
 #[derive(Copy, Clone)]
 pub struct Challenge {
@@ -21,6 +22,8 @@ pub const CHALLENGES: &[Challenge] = &[
     day3::PART2,
     day4::PART1,
     day4::PART2,
+    day5::PART1,
+    day5::PART2,
 ];
 
 impl Challenge {

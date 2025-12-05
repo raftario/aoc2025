@@ -76,7 +76,7 @@ pub const PART1: Challenge = Challenge::new(4, 1, |input| {
     total
 });
 
-pub const PART2: Challenge = Challenge::new(4, 1, |input| {
+pub const PART2: Challenge = Challenge::new(4, 2, |input| {
     let mut grid = Grid::new(input);
     let mut total = 0;
 
